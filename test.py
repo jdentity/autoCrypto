@@ -1,5 +1,5 @@
-import os
 import pyupbit
+import os
 from dotenv import load_dotenv
 
 load_dotenv(verbose=True)
@@ -10,3 +10,4 @@ upbit = pyupbit.Upbit(ACCESS_KEY, SECRET_KEY)
 
 print(upbit.get_balance("KRW-XRP"))     # KRW-XRP 조회
 print(upbit.get_balance("KRW"))         # 보유 현금 조회
+print(upbit.get_balance("ETH"))
