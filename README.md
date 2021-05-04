@@ -9,3 +9,5 @@ automated cryptocurrency trading by python
 - background run : nohup python3 bitcoinAutoTrade.py > output.log &
 - check running process : ps ax | grep .py
 - kill process : kill -9 PID
+
+source : https://github.com/youtube-jocoding/pyupbit-autotrade
