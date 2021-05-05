@@ -79,7 +79,7 @@ while True:
 		else:
 			blc = get_balance(TICKER)
 			if blc > 5000/get_current_price(KRW_TICKER):
-				upbit.sell_market_order(KRW_TICKER, blc*0.9995)
+				sell_result = upbit.sell_market_order(KRW_TICKER, blc*0.9995)
 				post_message(SLACK_TOKEN,"#crypto", TICKER+ " sell : " +str(sell_result))
 		time.sleep(1)
 	except Exception as e:
